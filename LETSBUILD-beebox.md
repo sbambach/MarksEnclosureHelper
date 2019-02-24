@@ -338,6 +338,13 @@ pins](REFERENCE.md#box-assembly) or you should be able to use an M3
 screw and nut as a hinge pin. Other options are limited only by the
 imagination. :)
 
+When finished, this box looks like this:
+
+![](example-beebox/example-beebox-1.jpg)
+![](example-beebox/example-beebox-2.jpg)
+![](example-beebox/example-beebox-3.jpg)
+
+
 This is not all Mark's Enclosure Helper can do; see the other examples
 for more possibilities.
 

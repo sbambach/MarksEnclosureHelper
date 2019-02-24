@@ -1,10 +1,12 @@
 # Mark's Enclosure Helper - Reference
 
-Copyright (c) 2019 Mark and Marie Lamb. Distributed under GPLv3, see LICENSE for terms.
+Copyright (c) 2019 Mark and Marie Lamb. Distributed under GPLv3, see
+LICENSE file for terms.
 
 - [Features](#features)
 - [Usage](#usage)
 - [Box Assembly](#box-assembly)
+  - [Magnet Insertion](#magnet-insertion)
 - [Main Modules](#main-modules)
   - [Layout Variables](#layout-variables)
 - [Box](#box)
@@ -197,6 +199,20 @@ Your hinge now has an effective **cheap** pin that should last as long
  as the rest of the box.
 ![](docpix/asm11.jpg)
 ![](docpix/example-partbox-1.jpg)
+
+-----------------------------------------------------
+### Magnet Insertion
+
+Slide one magnet into either the top or bottom magwart. Use that to
+determine the correct orientation for the second magnet, so that they
+attract one another instead of pushing each other apart. Slide the
+second magnet into the other magwart, being sure to keep the magnet
+oriented properly. Getting one back out can be frustrating.
+
+You should do something to ensure the magnets can't fall out of the
+magwart body. We've used superglue, hot glue, and hot plastic blobbed
+on with a "3d Pen" extruder; all worked well. The plastic looks best,
+we think. Gluing in a bit of filament might work almost as well.
 
 
 -----------------------------------------------------
