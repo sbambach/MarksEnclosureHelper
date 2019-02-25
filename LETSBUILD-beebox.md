@@ -348,5 +348,7 @@ When finished, this box looks like this:
 This is not all Mark's Enclosure Helper can do; see the other examples
 for more possibilities.
 
+If you find this project useful, **[PLEASE DONATE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J3AY8SM43A2DA&source=url)**, thanks! 
+
 
 

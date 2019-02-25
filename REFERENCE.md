@@ -51,7 +51,7 @@ then this can be the box for you, and you can spend your time and
 ingenuity on the "everything else" that makes it yours, while our code
 does the boring box things for you.
 
-If you find this project useful, **[PLEASE DONATE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GKNWF6AJD4KBA&source=url)**, thanks! 
+If you find this project useful, **[PLEASE DONATE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J3AY8SM43A2DA&source=url)**, thanks! 
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick" />
@@ -212,7 +212,7 @@ oriented properly. Getting one back out can be frustrating.
 You should do something to ensure the magnets can't fall out of the
 magwart body. We've used superglue, hot glue, and hot plastic blobbed
 on with a "3d Pen" extruder; all worked well. The plastic looks best,
-we think. Gluing in a bit of filament might work almost as well.
+we think. Gluing in a bit of filament might work too.
 
 
 -----------------------------------------------------

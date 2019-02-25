@@ -10,10 +10,9 @@
                    GIVE US SOME MONEY (pretty please)
                    
                    via paypal:
-                   
-   https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GKNWF6AJD4KBA&source=url
-   
-   And thank you for your support
+   https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J3AY8SM43A2DA&source=url
+  
+   And we thank you for your support.
    
    Copyright (c) 2019 Mark and Marie Lamb. Distributed under GPLv3, see LICENSE for terms.
    
