@@ -29,10 +29,10 @@ We hope you find this code useful, and ask that you **[hit this donate
 button](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J3AY8SM43A2DA&source=url)**
 please.
 
-We've got a
-large collection of mouths to feed and your generous donations may
-help me convince my wife that losing me to a coding project for the last
-month was worthwhile.
+We've got a large collection of mouths to feed and your generous
+donations may help me convince my lovely, loving, and patient wife
+that losing me to a coding project for the last month was
+worthwhile. 
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick" />
@@ -42,29 +42,6 @@ month was worthwhile.
 </form>
 
 -------------------------------
-
-todo
-
-* [ ] beg / pic
-* [ ] print & pic examples
-* [ ] publish code
-* [ ] package examples, publish them
-* [ ] promotional posts to hackaday, reddit .. elsewhere?
-
-
-
-
-Code | models | print | pics | name
------|-----|-----|-----|-----|
- [x] |  [x] |  [x] |  [x] |  beebox
- [x] |  [x] |  [ ] |  [ ] |  cardcase
- [x] |  [x] |  [x] |  [x] |  minitin
- [x] |  [x] |  [ ] |  [ ] |  partbox
- [x] |  [x] |  [ ] |  [ ] |  threadkeeper
- [x] |  [x] |  [ ] |  [ ] |  needlekeeper
-
-* [ ] |  [ ] |  [ ] |  [ ] |  
-
 
 
 

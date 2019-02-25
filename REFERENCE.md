@@ -971,6 +971,8 @@ on the tolerances and clearances provided the resultant joint can be
 tight enough to require significant force to open or can be simple
 to slide apart.
 
+![](docpix/dovetail-printed.jpg)
+
 The specification of the dovetail shape applies only to that shape,
 these variables do not affect the other box features, but the
 same definition should be shared between the block and rail calls.
@@ -1056,6 +1058,7 @@ out of corners when using a larger `corner_radius` Could also be used
 for rounding corners for decorative surfaces. Uses existing
 `corner_radius` etc.
 
+If this routine is cutting your objects too short, adjust `d.z`
 
 Without `diecut()` | With `diecut()`
 ------------------|------------

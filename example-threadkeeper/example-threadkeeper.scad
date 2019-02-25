@@ -13,8 +13,9 @@ top_rat = 0.15;
 lip_rat= 0.10;  
 corner_radius=6;
 
-hinge_points = [0.15, 0.5, 0.85];
-hinge_len = 16; 
+hinge_points = [0.25, 0.75];
+hinge_len = 40; 
+hinge_ztnotch=4.4;
 
 catch_points = [0.5];
 
