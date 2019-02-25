@@ -1,5 +1,6 @@
 /* ======================================
     Mark's Enclosure Helper
+    https://github.com/h2odragon/MarksEnclosureHelper
     
   the values in this file are reasonable defaults, or blank, for a 
   vanilla enclosure experience. include this file in your OpenSCAD
