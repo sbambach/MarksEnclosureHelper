@@ -19,7 +19,7 @@
    
 ========================================== */
 
-MEH_VERSION = "20190224";
+MEH_VERSION = "20190226";
 
 
 // ============================== VARIABLES ====================  
@@ -73,6 +73,13 @@ hinge_standoff = 0;
 
 // where the hinge leg bends (z), % of hinge height
 hinge_midpoint = 0.5; 
+
+// where the hinge leg ends. <1 * lz, >1 taken absolute.
+hinge_basepoint_bottom = 0;
+hinge_basepoint_top = 0;
+
+// diameter of hinge root cylinder
+hinge_root_d = false; // hinge_id;
 
 // the diameter of the outer hinge cylinder
 hinge_od = 8; 
@@ -561,12 +568,11 @@ module hingedbox_half( bd, topflag=false ) {
     // hinge lengths
     bhl = (hinge_xrat>1)? hinge_xrat : hinge_len * hinge_xrat;
     thl = ( (hinge_len -bhl) -(CLEAR*2) ) /2;
-
     // hinge y offset
     hy = (0-hinge_standoff)-(hinge_od/2);
-    
-    // hinge z
+    // hinge local z
     hlz = (topflag) ? (dz * (1.0 - hinge_zrat)) : (dz * hinge_zrat) ;
+    hinge_root_d = (hinge_root_d !=false)? hinge_root_d : hinge_id;
 
     // rim
     lip_h = dz * lip_rat;
@@ -738,8 +744,10 @@ module hingedbox_half( bd, topflag=false ) {
         // ntf is which face to take nut inset out of
         ofn = hinge_ofn; ifn = hinge_ifn;
         ztn = hinge_ztnotch;
+        hbs = (hinge_basepoint_bottom>1)? hinge_basepoint_bottom : hinge_basepoint_bottom * hlz;
+        tbs = (hinge_basepoint_top>1)? hinge_basepoint_top : hinge_basepoint_top * hlz;
         lbtm = (hlz - (hinge_id/2));
-        lp1 = (topflag) ? (0-lbtm) : lbtm;
+        lp1 = (topflag) ? (0- (lbtm -tbs)) : lbtm -hbs ;
         module hingept() {
             hull() {
                 cylinder( d=hinge_od, h=cl, $fn=ofn); // pin through here
@@ -747,8 +755,8 @@ module hingedbox_half( bd, topflag=false ) {
             }
             hull () {
                 translate( [lp1* hinge_midpoint,0,0] ) cylinder( d=hinge_od, h=cl ); //middle leg point
-                translate( [lp1,0,0] ) cylinder( d=hinge_id, h=cl ); // bottom outer
-                translate( [lp1,0-hy,0] ) cylinder( d=hinge_id, h=cl ); //bottom inner
+                translate( [lp1,0,0] ) cylinder( d=hinge_root_d, h=cl ); // bottom outer
+                translate( [lp1,0-hy,0] ) cylinder( d=hinge_root_d, h=cl ); //bottom inner
             }
         }
         difference(){

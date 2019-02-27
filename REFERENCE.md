@@ -134,8 +134,29 @@ catch_points=[0.5];
 ![](docpix/rux1.png)
 
 
+### Licensing and Remixing
 
+We're distrubiting this code under the GPLv3. That means that you are
+free to copy and change it as you like. We have not seen discussion yet
+of the implications of GPL vs. distributing STL files which are the
+second order product of the code, etc... So we'll make our intent
+clear as possible and worry about the legal language should it ever
+become necessary.
 
+YOU MAY use `hingebox_code.scad` as part of your OpenSCAD script to
+generate a model (STL file, etc) that you then distribute,
+commercially or otherwise, without any obligation to release the code
+that generates **YOUR** parts of the model. We would appreciate
+attribution and a link to our project repository on GitHub in that case.
+
+Our view is that our GPL license covers only our code, and not code
+which uses it; we have no right nor interest in the licensing or use
+of such. If you modify **OUR** code in order to make a thing **FOR
+REDISTRIBUTION**, then we request that you share those modifications
+to **our** code with the public, under the same license you received our
+code under.
+
+If you need different license terms, please get in touch.
 
 
 -----------------------------------------------------
@@ -364,6 +385,13 @@ hinge_standoff = 0;
 // where the hinge leg bends (z), % of hinge height
 hinge_midpoint = 0.5; 
 
+// where the hinge leg ends. <1 * lz, >1 taken absolute.
+hinge_basepoint_bottom = 0;
+hinge_basepoint_top = 0;
+
+// diameter of hinge root cylinder
+hinge_root_d = false; // hinge_id;
+
 // the diameter of the outer hinge cylinder
 hinge_od = 8; 
 
@@ -413,6 +441,17 @@ value of CLEAR, see elsewhere).
 
 ![](docpix/hinge_len_xrat.png)
 
+### hinge_basepoint_top
+### hinge_basepoint_bottom
+
+Controls the bottom of the hinge leg, for the box top and bottom parts
+respectively. May be specified absolute (>1) or relative to the part
+height (<1). Default 0; which extends the hinge the full box height.
+
+### hinge_root_d
+
+Diameter of cylinder making up the base of the hinge leg. Defaults to
+`hinge_id`; increase to make the hinge root larger and more solid.
 
 
 ### hinge_od
@@ -848,6 +887,10 @@ somewhere. Could be used to hold nuts for internal hardware.
 -----------------------------------------------------
 ## Callbacks
 =======================
+
+XXXX whats a callback?
+
+
 ```
 module insert_top( d ) {}
 module insert_bottom( d) {}
@@ -995,7 +1038,8 @@ or if breakpt is nonzero, from breakpt to the end.
 module dovetail_rail( tlen, dtspec )
 
     tlen - block length
-    dtspec - 5vec [ height, top_width, bottom_width, tpr, tbk] profile of dovetail
+    dtspec = [height, top_wide, bottom_wide, taper=0, breakpt=0]
+              dovetail profile
     tpr - (=0) taper subtracted from one end. make negative to reverse
     tbk - (=0) point along length to begin tapering off
 ```

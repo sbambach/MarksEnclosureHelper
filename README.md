@@ -1,7 +1,5 @@
 # Mark's Enclosure Helper 
 
-   Copyright (c) 2019 Mark and Marie Lamb. Distributed under GPLv3, see LICENSE file for terms.
-
 This is an OpenSCAD script for generating a hinged box, with rounded
 corners, lid, interlocking rims, snap fit, magnet, or screw closures,
 and easy places for adding cutouts or additions to any face. All
@@ -11,16 +9,21 @@ image decorations possible in a single line of code. Additionaly a
 dovetail shape is provided to make boxes that interlock with each
 other.
 
-![](docpix/protopile.jpg)
-
 
 We've tried to make this useable for those less comfortable with or even
-new to OpenSCAD. See the "Let's Build a Bee Box" tutorial: [LETSBUILD-beebox.md](LETSBUILD-beebox.md).
+new to OpenSCAD. See the "Let's Build a Bee Box" tutorial: 
+
+[LETSBUILD-beebox.md](LETSBUILD-beebox.md).
 
 Experienced OpenSCAD users may wish to skip straight to the
-[REFERENCE.md](REFERENCE.md) file, or hacking at the included examples.
+
+[REFERENCE.md](REFERENCE.md) 
+
+or to hacking at the included examples.
 
 
+
+![](docpix/protopile.jpg)
 
 ------------------------------
 
@@ -42,6 +45,8 @@ My inspriration :)
 
 
 -------------------------------
+   Copyright (c) 2019 Mark and Marie Lamb. Distributed under GPLv3, see LICENSE file for terms.
+
 
 
 
