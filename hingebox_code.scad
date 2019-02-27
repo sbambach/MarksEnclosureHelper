@@ -489,8 +489,7 @@ module bs_shape( d, btn_d, btn_h, stalk_d, ra=0, f=$fn) {
 
 /* =========================
    ========================= */
-module qwart( td) {
-    wfn = 48;
+module qwart( td, wfn=48) {
     // qwart shape
     intersection () {
         translate([0,0,0]) cube( [td.x, td.y, td.z] );

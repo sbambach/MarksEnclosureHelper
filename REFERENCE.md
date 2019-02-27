@@ -17,7 +17,8 @@ LICENSE file for terms.
 - [Magwarts](#magwarts)
 - [Screw Towers](#screw-towers)
 - [Callbacks](#callbacks)
-- [Dovetails](#dovetails)
+- [Shapes](#shapes)
+  - [Dovetails](#dovetails)
 - [Utilities](#utilities)
   - [diecut()](#diecut)
   - [center_scale()](#center_scale)
@@ -136,28 +137,41 @@ catch_points=[0.5];
 
 ### Licensing and Remixing
 
-We're distrubiting this code under the GPLv3. That means that you are
-free to copy and change it as you like. We have not seen discussion yet
-of the implications of GPL vs. distributing STL files which are the
-second order product of the code, etc... So we'll make our intent
-clear as possible and worry about the legal language should it ever
-become necessary.
+We're distrubiting this code under the GPLv3. That's a well known
+license but we're not certain of the implications for 3d printing
+work. We'll make our intent clear as possible:
 
 YOU MAY use `hingebox_code.scad` as part of your OpenSCAD script to
 generate a model (STL file, etc) that you then distribute,
-commercially or otherwise, without any obligation to release the code
-that generates **YOUR** parts of the model. We would appreciate
-attribution and a link to our project repository on GitHub in that case.
+commercially or otherwise, without any obligation from us to publish
+your code. We would appreciate mention and a link to our GitHub page
+in that case, but you are not obliged.
 
-Our view is that our GPL license covers only our code, and not code
-which uses it; we have no right nor interest in the licensing or use
-of such. If you modify **OUR** code in order to make a thing **FOR
-REDISTRIBUTION**, then we request that you share those modifications
-to **our** code with the public, under the same license you received our
-code under.
+If you distribute your `.scad` file as well; you need not include
+`hingebox_code.scad` with your package, and should instead point users
+to the GitHub page with a link so they may access the latest revisions
+if any. We do not assert any rights over how you may license such a
+release. We do require attribution, a simple "uses
+github.com/h2odragon/MarksEnclosureHelper" will satisfy us. 
+
+If you change OUR CODE, the `hingebox_code.scad` file, the example
+boxes, and distribute that, then you MUST also publish your changes to
+our code as part of that distribution. We thank you for contributing
+to Free Software. We would prefer potential new users be introduced to
+the whole distribution, including documentation, so please include the
+whole archive you got when copying on.
 
 If you need different license terms, please get in touch.
 
+### Disclaimer
+
+Any and all personal and organizational use of our code that do not
+involve distribution of actual bits we generated, are not our
+responsibility and have nothing to do with us. We do not warrant this
+code to be free from defects, suitable to any purpose, able to make
+delicious candies, or to be of any utility at all. In the event of
+unexpected performance or interfeference with performance of any other
+information or belief system we can offer no remedy.
 
 -----------------------------------------------------
 ## Box Assembly
@@ -888,8 +902,9 @@ somewhere. Could be used to hold nuts for internal hardware.
 ## Callbacks
 =======================
 
-XXXX whats a callback?
-
+A "callback" is a do-nothing module, which provides a place for you to
+define your own module that does *something* instead. We've defined
+the following callback modules:
 
 ```
 module insert_top( d ) {}
@@ -1001,7 +1016,10 @@ No provision is made to keep decorations and cutouts and
 inserts from colliding or interfering with each other.
 
 -----------------------------------------------------
-## Dovetails
+## Shapes
+
+
+### Dovetails
 
 We've provided a pair of interlocking dovetail shapes for making
 groups of boxes that join together, or whatever other use such might

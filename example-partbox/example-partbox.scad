@@ -1,4 +1,4 @@
-include <../hingebox_code.scad>
+include <../hingebox_code.scad> // uses github.com/h2odragon/MarksEnclosureHelper
 
 hingedbox( box_def );
 
