@@ -433,7 +433,10 @@ List of points to place hinges. Specified as factors applied to
 ### hinge_zrat
 
 Defines the point at which the hinge pin should lie, relative to the Z
-dimenzion of the box definition (`box_def.z`).
+dimenzion of the box definition (`box_def.z`). This point changes how
+the box lid sweeps in over the top as it closes, some combinations of
+configurations won't work.
+
 
 **hinge_zrat** | result (`hinge_standoff` used for illustration)
 ---------------|-------
