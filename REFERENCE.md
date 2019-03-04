@@ -1259,7 +1259,7 @@ taken as factors to apply to that dimension. Values greater than one
 are used as absolute units for positioning.
 
 
-To create a cross shape that diveds a box into 4 sections:
+To create a cross shape that divides a box into 4 sections:
 
 ```
 module insert_bottom( d ) {
@@ -1320,3 +1320,25 @@ Call | Result
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------
+   Copyright (c) 2019 Mark and Marie Lamb. Distributed under GPLv3, see LICENSE file for terms.
+
+We hope you find this code useful, and ask that you **[hit this donate
+link](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J3AY8SM43A2DA&source=url)**
+please.

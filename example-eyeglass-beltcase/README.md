@@ -6,6 +6,12 @@ them safely as she goes about her daily activities. She needs a case
 which that can attach to her clothing or back pack, that's tough
 enough to survive the hectic and physical life she leads.
 
+![](esme-gcase-1.jpg)
+
+This is after school the first day she's used this outside. It
+survived!
+
+
 ![](example-gcase-1.jpg)
 
 We've designed this box to be slightly difficult to open; the hinges
@@ -18,6 +24,9 @@ accidental bumps and scrapes will not knock the lid loose.
 Squeezing the front and back faces of the box together as shown should
 result in the top popping up, possibly a small amount of force of the
 clasp will be needed. Ours just pop open. 
+
+![](esme-gcase-2.jpg)
+
 
 You will need to line the box interior with something to keep the
 lenses of eye glasses from getting scratched up by the plastic. We
