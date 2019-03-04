@@ -32,6 +32,8 @@ catch_offset = 0.8;
 catch_hole_xtra = 0.8;
 catch_foot_xrat = 1;
 
+nametext= "Esme";
+
 module decorate_front( d ) { 
     yd = d.y*0.7; yofs=0;
     xd = d.x-(corner_radius*2);
@@ -39,7 +41,7 @@ module decorate_front( d ) {
     translate( [(d.x/2) - (xd/2), yofs+ ((d.y/2) - (yd/2)), -0.1] )
     translate([0,yd,0]) rotate([0,0,-90])
     resize( [yd, xd, wall_thick] ) {
-        linear_extrude( height=1) { text( "Esme", font="Sans"); } 
+        linear_extrude( height=1) { text( nametext, font="Sans"); } 
     }
 }
 
@@ -60,19 +62,4 @@ module decorate_back(d) {
     } // loop
 
 }
-module wartclip( bd, thick, ra=0 ) {
-    sfn=24; wfn=48;
-    th = thick/2;
-    qz=thick; wofs=qz;
-    pts =[ [qz,qz, -qz], [bd.x-qz, qz, -qz ], [qz,qz, bd.z-qz], [bd.x-qz, qz, bd.z-qz ], ];
-    module hpts( pi ){hull(){for (i=pi){translate(pts[i]) sphere( r=qz, $fn=sfn ); }}}
-    translate([bd.x,bd.y,0]) rotate([0,0,180]) 
-    intersection() { 
-        cube( [bd.x, bd.y, bd.z] );
-        gang() {
-        hpts( [0,1,2,3] );    
-        translate([bd.x,wofs,bd.z-qz]) rotate([0,ra,90]) 
-          qwart( [bd.y-wofs, bd.x, qz], wfn, [2,1,3.4] );
-    }}//intersection
-}//wartclip
 

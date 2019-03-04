@@ -14,16 +14,32 @@ We've tried to make this useable for those less comfortable with or even
 new to OpenSCAD. See the "Let's Build a Bee Box" tutorial: 
 
 [LETSBUILD-beebox.md](LETSBUILD-beebox.md).
+![](example-beebox/example-beebox-1.jpg)
 
 Experienced OpenSCAD users may wish to skip straight to the
 
 [REFERENCE.md](REFERENCE.md) 
 
-or to hacking at the included examples.
+or to hacking at the included examples:
 
+[Eyeglass Belt Case](example-eyeglass-beltcase/)
+![](example-eyeglass-beltcase/example-gcase-2.jpg)
 
+[Interlocking Parts Boxes](example-partbox/)
+![](example-partbox/example-partbox-outgang.jpg)
 
-![](docpix/protopile.jpg)
+[Neddle Keeper with Sizing Guage](example-needlekeeper/)
+![](example-needlekeeper/example-needlekeeper-outopen.jpg)
+
+[4 Spool Thread Keeper](example-threadkeeper/)
+![](example-threadkeeper/example-threadkeeper-1.jpg)
+
+[Mini Mint Tin with Magnet or Catch Clasp](example-minitin/)
+![](example-minitin/example-minitin-group.jpg)
+
+[Card Deck Case](example-cardcase/)
+![](example-cardcase/example-cardcase-open.jpg)
+
 
 ------------------------------
 
@@ -37,6 +53,9 @@ We've got a large collection of mouths to feed and your generous
 donations may help me convince my lovely, loving, and patient wife
 that losing me to a coding project for the last month was
 worthwhile. 
+
+![](docpix/protopile.jpg)
+
 
 ![](docpix/marie.jpg)
 

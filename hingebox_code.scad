@@ -19,7 +19,7 @@
    
 ========================================== */
 
-MEH_VERSION = "20190226";
+MEH_VERSION = "20190304";
 
 
 // ============================== VARIABLES ====================  
@@ -488,6 +488,9 @@ module bs_shape( d, btn_d, btn_h, stalk_d, ra=0, f=$fn) {
 
 
 /* =========================
+    td - bounding box of shape
+    wfn - $fn of sphere that gets quarterd and squished
+    dst - 3vec of factors passed to scale()
    ========================= */
 module qwart( td, wfn=48, dst=[2,1,2.4]) {
     // qwart shape
@@ -497,6 +500,28 @@ module qwart( td, wfn=48, dst=[2,1,2.4]) {
           scale( [(td.x*dst.x), (td.y*dst.y), (td.z*dst.z)] ) { sphere(d=1, $fn=wfn); }
     }    
 }
+
+/* =========================
+    bd - bounding box
+    thick - how thick the clip part is (at the top of the bounding box)
+    ra - rotation angle to apply to clip body. 0 is parallel, ~ 10 will have the tip touching base level
+   ========================= */
+module wartclip( bd, thick, ra=0 ) {
+    sfn=24; wfn=48;
+    th = thick/2;
+    qz=thick; wofs=qz;
+    pts =[ [qz,qz, -qz], [bd.x-qz, qz, -qz ], [qz,qz, bd.z-qz], [bd.x-qz, qz, bd.z-qz ], ];
+    module hpts( pi ){hull(){for (i=pi){translate(pts[i]) sphere( r=qz, $fn=sfn ); }}}
+    translate([bd.x,bd.y,0]) rotate([0,0,180]) 
+    intersection() { 
+        cube( [bd.x, bd.y, bd.z] );
+        gang() {
+        hpts( [0,1,2,3] );    
+        translate([bd.x,wofs,bd.z-qz]) rotate([0,ra,90]) 
+          qwart( [bd.y-wofs, bd.x, qz], wfn, [2,1,3.4] );
+    }}//intersection
+}//wartclip
+
 
 /* =========================
    ========================= */

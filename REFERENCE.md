@@ -17,8 +17,9 @@ LICENSE file for terms.
 - [Magwarts](#magwarts)
 - [Screw Towers](#screw-towers)
 - [Callbacks](#callbacks)
-- [Shapes](#shapes)
+- [Parts](#shapes)
   - [Dovetails](#dovetails)
+  - [Wartclip](#wartclip)
 - [Utilities](#utilities)
   - [diecut()](#diecut)
   - [center_scale()](#center_scale)
@@ -1019,7 +1020,9 @@ No provision is made to keep decorations and cutouts and
 inserts from colliding or interfering with each other.
 
 -----------------------------------------------------
-## Shapes
+## Parts
+
+These are shapes to attach to boxes.
 
 
 ### Dovetails
@@ -1092,6 +1095,29 @@ are some effort to join and take apart, but survive repeated cycles of
 assembly and disassembly well. Your circumstances may require
 adjusting this factor.
 
+
+### wartclip()
+=======================
+```
+module wartclip( bd, thick, ra=0 ) {
+
+    bd - bounding box
+    thick - how thick the clip part is (at the top of the bounding box)
+    ra - rotation angle to apply to clip body. 0 is parallel, ~ 10 will have the tip touching base level
+
+```
+
+Based on the same distorted quarter shphere as the magwarts, this
+shape can be used as a belt clip, or loop. `thick` controls the top
+leg that connects to the box, as well as the thickness of the clip
+body. We've found 5mm strong enough to use and not too thick.
+
+the rotation angle `ra` can be used to turn the tip of the clip
+inwards towards the box body; perhaps providing a titghter grip on the
+belt. It might be harder to print depending on your slicer.
+
+To make a belt loop with this, place two, one rotated 180 degress from
+the other.
 
 
 -----------------------------------------------------
