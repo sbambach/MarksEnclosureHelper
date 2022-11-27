@@ -563,10 +563,10 @@ module base_box( d, top_inset=false, f=corner_fn ) {
     b=corner_radius;
     tb= top_inset ? top_inset : b;
     hull() {
-        translate( [b,b,0] ) cylinder( r=b, r2=tb, h=d.z, $fn=f );
-        translate( [b,d.y-b,0] ) cylinder( r=b, r2=tb,h=d.z, $fn=f  );
-        translate( [d.x-b,b,0] ) cylinder( r=b, r2=tb,h=d.z, $fn=f  );
-        translate( [d.x-b,d.y-b,0] ) cylinder( r=b, r2=tb,h=d.z, $fn=f  );
+        translate( [b,b,0] ) cylinder( r1=b, r2=tb, h=d.z, $fn=f );
+        translate( [b,d.y-b,0] ) cylinder( r1=b, r2=tb,h=d.z, $fn=f  );
+        translate( [d.x-b,b,0] ) cylinder( r1=b, r2=tb,h=d.z, $fn=f  );
+        translate( [d.x-b,d.y-b,0] ) cylinder( r1=b, r2=tb,h=d.z, $fn=f  );
     }
 }
 
